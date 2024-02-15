@@ -2,29 +2,33 @@ const getSleepHour  = day => {
     day = day.toLowerCase();
 
     switch (day) {
-        case "monday":
+        case 'monday':
             return 6
             break;
-        case "tuesday":
+        case 'tuesday':
             return 7
             break;
-        case "wednesday":
+        case 'wednesday':
             return 6
             break;
-        case "thursday":
+        case 'thursday':
             return 6
             break;
-        case "friday":
+        case 'friday':
             return 7
             break;
-        case "saturday":
+        case 'saturday':
             return 8
             break;
-        case "sunday":
+        case 'sunday':
             return 6
             break;
         default:
-            console.log("Error: Invalid input")
+            console.log('Error: Invalid input')
             break;
     }
+};
+
+const getActualSleepHours = () => {
+
 };
