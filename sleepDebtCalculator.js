@@ -37,3 +37,8 @@ const getActualSleepHours = () => {
     });
     return total;
 };
+
+const getIdealSleepHours = () => {
+    const idealHours = 8;
+    return 8 * 7;
+};
