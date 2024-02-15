@@ -30,5 +30,10 @@ const getSleepHour  = day => {
 };
 
 const getActualSleepHours = () => {
-
+    const weekdays = ['monday','tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    let total = 0;
+    weekdays.forEach(day => {
+        total += getSleepHour(day);
+    });
+    return total;
 };
