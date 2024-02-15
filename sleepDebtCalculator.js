@@ -1,3 +1,4 @@
+/*
 const getSleepHour  = day => {
     day = day.toLowerCase();
 
@@ -30,6 +31,9 @@ const getActualSleepHours = () => {
     });
     return total;
 };
+*/
+
+const getActualSleepHours = () => 6 + 7 + 6 + 6 + 7 + 8 + 6;
 
 const getIdealSleepHours = (idealHours) => idealHours * 7;
 
