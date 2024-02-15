@@ -3,26 +3,19 @@ const getSleepHour  = day => {
 
     switch (day) {
         case 'monday':
-            return 6
-            break;
+            return 6;
         case 'tuesday':
-            return 7
-            break;
+            return 7;
         case 'wednesday':
-            return 6
-            break;
+            return 6;
         case 'thursday':
-            return 6
-            break;
+            return 6;
         case 'friday':
-            return 7
-            break;
+            return 7;
         case 'saturday':
-            return 8
-            break;
+            return 8;
         case 'sunday':
-            return 6
-            break;
+            return 6;
         default:
             console.log('Error: Invalid input')
             break;
