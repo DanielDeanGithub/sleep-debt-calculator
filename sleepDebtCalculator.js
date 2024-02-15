@@ -31,14 +31,11 @@ const getActualSleepHours = () => {
     return total;
 };
 
-const getIdealSleepHours = () => {
-    const idealHours = 8;
-    return idealHours * 7;
-};
+const getIdealSleepHours = (idealHours) => idealHours * 7;
 
 const calculateSleepDebt = () => {
     const actualSleepHours = getActualSleepHours();
-    const idealSleepHours = getIdealSleepHours();
+    const idealSleepHours = getIdealSleepHours(8);
 
     if (actualSleepHours === idealSleepHours) return console.log('You got the perfect ammount of sleep.');
     if (actualSleepHours > idealSleepHours) return console.log(`You got ${actualSleepHours - idealSleepHours} more hours sleep than needed.`);
